@@ -18,7 +18,8 @@ void convert( char *str ){
 
 int main( void ) {
     char input[255];
-    scanf("%s", &input);
+    printf("Please enter a Word: ");
+    scanf("%s", input);
     convert( input );
     printf("Result: %s\n", input );
 }

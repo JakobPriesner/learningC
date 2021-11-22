@@ -33,15 +33,20 @@ unsigned int slowFib( unsigned int n ){
 
 int main( int argc, char *argv[] ) {
     if ( argc == 0 || argc == -1 ){
-        printf( "At least one argument expected" );
+        printf( "[ERROR] At least one argument expected" );
     } else {
+        int nFounded = 0;
         char c = 'n';
         for ( int i = 0; i < argc; i++ ){
             if ( strcmp(argv[i], "-n") == 0 ){
                 int val = atoi(argv[i+1]);
-                printf("fib(%d): ", val);
+                printf("[RESULT] fib(%d): ", val);
                 printf("%d", val);
+                nFounded = 1;
             }
+        }
+        if ( nFounded == 0 ){
+            printf("[ERROR] Algorithm requires a parameter with the name -n!");
         }
     }
 

@@ -18,7 +18,7 @@ void convert( char *str ){
 int main( void ) {
     char input[255];
     printf("Please enter a Word: ");
-    scanf("%s", input);
+    fgets(input, 255, stdin);
     convert( input );
     printf("Result: %s\n", input );
 }

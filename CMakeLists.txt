@@ -3,4 +3,4 @@ project(Uebung_04 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Uebung_04 task4/fib.c)
+add_executable(Uebung_05 task5/main.c)
